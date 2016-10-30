@@ -1,13 +1,13 @@
 .container {
   width: 965px;
-  height:54px;
+  /*height:54px;*/
   margin-left: auto;
   margin-right: auto;
 
 }
 
 nav {
-  height: 54px;
+  /*height: 54px;*/
   width: 740px;
   display: inline-block;
 
@@ -52,7 +52,7 @@ img {
   float:right;
 }
 
-section {
+.banner-container {
   background-color: #dbd8d7;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -66,49 +66,50 @@ section img {
   display: block;
 }
 
-.news {
-  width:965px;
-  margin-right: auto;
-  margin-left: auto;
+.new-title {
+font-size: 18px;
+color: #231F20;
+line-height: 50px;
+text-transform: uppercase;
 }
 
-.all {
-  text-transform: lowercase;
-  border-left: 2px solid black;
-  color: black;
-  padding-left: 4px;
-  font-size: 16px;
-
+.news-subtitle {
+	font-size: 12px;
+	text-transform: lowercase;
+	margin-left: 5px;
 }
 
-#news {
-  margin-right:3px;
-  color: black;
+.news-article {
+  display: inline-block;
+	margin-right: 15px;
+  margin-top: 15px;
 }
 
-.newsblock {
+.news-image {
   width: 230px;
   height: 160px;
 }
 
-#newsblock {
-  display: inline-block;
-  margin-right: 8.2px; <!-- sxvanairad rogor sheiezleba kide? -->
-}
-
-#newsblock2 {
-  display: block;
+.news-description {
+  background-color: #DBD8D7;
   height: 40px;
-  width: 230px;
-  background-color: #dbd8d7;
+  padding: 5px 0 0 15px;
 }
 
-h1 {
-  line-height: 40px;
-  text-align: center;
+.news-article:nth-child(4n){
+	margin-right: 0;
 }
 
-#video {
+.news-article:nth-child(1),
+.news-article:nth-child(2),
+.news-article:nth-child(3),
+.news-article:nth-child(4){
+	margin-top: 0
+}
+
+
+
+.background-videos {
   background-color: #364096;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -122,10 +123,63 @@ h1 {
 
 }
 
-#videoblock {
+.videoblock {
   display: inline-block;
   width: 475px;
   height: 244px;
   background-color: white;
 
+}
+
+.videoblock:nth-child(2) {
+  float:right;
+}
+
+.featured {
+  height: 160px;
+  width: 237.5px;
+  display: inline-block;
+  background-color: #dbd8d7;
+  vertical-align: middle;
+  position:relative;
+}
+
+.featured:nth-child(2n){
+  margin-right: 15px;
+}
+.featured:nth-child(4n){
+  margin-right: 0px;
+}
+
+.featured-text {
+padding-top:15px;
+padding-right:15px;
+font-size:14px;
+
+}
+.read-more {
+  position: absolute;;
+  bottom: 11px;
+  right: 15px;
+  color: #3c58a7;
+  font-size:14px;
+  }
+
+.footer {
+  background-color: #dbd8d7;
+  height: 54px;
+}
+
+.footer-container {
+  width: 965px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #3c58a7;
+  font-size: 14px;
+  line-height: 54px;
+
+}
+
+.clear {
+  clear:inherit;
 }
