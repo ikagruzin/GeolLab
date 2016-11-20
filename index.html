@@ -19,10 +19,11 @@
     </nav><!--
  --><div class="social">
       <ul>
-        <li style="margin-right:15px"><img src="icon/GooglePlus-64.png"></li>
+      <!--<li style="margin-right:15px"><img src="icon/GooglePlus-64.png"></li>
         <li style="margin-right:15px"><img  class="facebook" src="icon/Facebook-64.png"></li>
         <li style="margin-right:15px"><img src="icon/YouTube-48.png"></li>
-        <li class="search"><img src="icon/Search.png"></li>
+        <li class="search"><img src="icon/Search.png"></li>--->
+        <li class="login" id="login">Log In</li>
       </ul>
     </div>
    </header>
@@ -134,11 +135,26 @@
          <div class="footer-container">
            <p>@2015 World Wide Web Foundation</p>
            <p  style="float:right">created by: Irakli Margania</p>
-           <div class="clear"><div>
          </div>
        </footer>
 
+<div class="popup" id="popup">
+  <div class="login-content">
+    <div class="close-popup" id="close-popup">X</div>
+    <div class="responsive">
+      <input class="name-class" type="text" placeholder="Enter your name"></input>
+      <input class="password-class" type="password" placeholder="Enter your password"></input>
+        <div style="margin-top:20px">
+         <input class="checkbox vertical-item" type="checkbox" id="checkbox"></input>
+         <label class="vertical-item" for="checkbox">Save password</label>
+        </div>
+      <button>LOG IN</button>
+    </div>
+  </div>
+</div>
 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script type="text/javascript" src="js/script.js"></script>
 
  </body>
 </html>

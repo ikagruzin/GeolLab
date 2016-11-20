@@ -22,6 +22,7 @@ li {
   color: #3c58a7;
 }
 
+
 .active {
   color: #dbd8d7
 }
@@ -182,4 +183,137 @@ font-size:14px;
 
 .clear {
   clear:inherit;
+}
+
+.login {
+  cursor: pointer;
+}
+
+.popup {
+position: fixed;
+left:0;
+top:0;
+width: 100%;
+height: 100%;
+background-color: rgba(239, 65, 54, 0.8);
+display: none;;
+
+}
+
+.login-content {
+  max-width:400px;
+  width:100%;
+  display: inline-block;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-content input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  border: 1px solid silver;
+  padding-left: 20px;
+}
+
+.login-content input:last-child {
+  margin-top: 20px;
+}
+
+.login-content button {
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  background: red;
+  border: 1px solid silver;
+  margin-top: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.login-content .checkbox {
+height: 20px;
+width: 20px;
+
+}
+
+.password-class {
+  margin-top:20px;
+
+}
+
+.vertical-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.close-popup {
+position: absolute;
+right: 0%;
+transform: translateY(-50%);
+top: -30px;
+color: white;
+cursor: pointer;
+}
+
+
+@media screen and (max-width: 400px){
+
+  .login-content {
+    max-width:none;
+    height: 100%;
+  }
+
+  .responsive {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left:20px;
+    width: calc(100% - 40px);
+  }
+
+  .login-content input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+    border: 1px solid silver;
+    padding-left: 20px;
+  }
+
+  .login-content input:last-child {
+    margin-top: 20px;
+  }
+
+  .login-content button {
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+    background: red;
+    border: 1px solid silver;
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .login-content .checkbox {
+  height: 20px;
+  width: 20px;
+
+  }
+
+  .password-class {
+    margin-top:20px;
+
+  }
+
+  .vertical-item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
 }
